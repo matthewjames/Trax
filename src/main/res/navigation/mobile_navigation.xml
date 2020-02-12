@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_time_clock">
+
+    <fragment
+        android:id="@+id/navigation_time_clock"
+        android:name="com.mattjamesdev.trax.ui.time_clock.TimeClockFragment"
+        android:label="@string/title_time_clock"
+        tools:layout="@layout/fragment_time_clock" />
+
+    <fragment
+        android:id="@+id/navigation_calender"
+        android:name="com.mattjamesdev.trax.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_analytics"
+        android:name="com.mattjamesdev.trax.ui.analytics.AnalyticsFragment"
+        android:label="@string/title_analytics"
+        tools:layout="@layout/fragment_analytics" />
+</navigation>
